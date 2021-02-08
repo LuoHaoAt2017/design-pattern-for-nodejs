@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* 基本配置 */
+    "target": "ES2015",
+    "module": "CommonJS",
+
+    /* 严格配置 */
+    "strict": true,
+
+    /* 模块配置 */
+
+
+    /* 语法配置 */
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "restartable": "rs",
+  "delay": 1000,
+  "watch": ["dist/**/*.ts"],
+  "ignore": ["test"],
+  "ext": "ts,json"
+}
