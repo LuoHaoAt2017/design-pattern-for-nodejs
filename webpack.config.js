@@ -11,9 +11,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: ['babel-loader']
+      },
+      {
         test: /\.ts$/,
         use: ['ts-loader']
       }
     ]
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json']
   }
 }

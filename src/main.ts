@@ -18,6 +18,9 @@ class Water extends H2O {
   }
 }
 
-const app =  new Steam();
+new Steam();
+new Water();
 
-export default app;
+export default {
+  Steam, Water
+};

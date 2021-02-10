@@ -3,19 +3,23 @@
     /* 基本配置 */
     "target": "ES2015",
     "module": "CommonJS",
-
     /* 严格配置 */
     "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
 
     /* 模块配置 */
-
+    "moduleResolution": "node",
 
     /* 语法配置 */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  // "include": [
+  //   "src"
+  // ],
+  // "exclude": [
+  //   "node_modules"
+  // ]
 }

@@ -15,7 +15,7 @@
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const path = __webpack_require__(/*! path */ \"path\");\n\nmodule.exports = {\n  mode: 'development',\n  target: \"node\",\n  entry: './src/main.ts',\n  output: {\n    filename: \"[name].bundle.js\",\n    path: path.resolve(__dirname, 'dist')\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.ts$/,\n        use: ['ts-loader']\n      }\n    ]\n  }\n}\n\n//# sourceURL=webpack://nodejs-design-pattern/./webpack.config.js?");
+eval("var path = __webpack_require__(/*! path */ \"path\");\n\nmodule.exports = {\n  mode: 'development',\n  target: \"node\",\n  entry: './src/main.ts',\n  output: {\n    filename: \"[name].bundle.js\",\n    path: path.resolve(__dirname, 'dist')\n  },\n  module: {\n    rules: [{\n      test: /\\.js$/,\n      use: ['babel-loader']\n    }, {\n      test: /\\.ts$/,\n      use: ['ts-loader']\n    }]\n  },\n  resolve: {\n    extensions: ['.ts', '.js', '.json']\n  }\n};\n\n//# sourceURL=webpack://nodejs-design-pattern/./webpack.config.js?");
 
 /***/ }),
 
