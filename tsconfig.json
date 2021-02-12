@@ -7,7 +7,7 @@
     "allowJs": true,
     /* 严格配置 */
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
 
     /* 模块配置 */

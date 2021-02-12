@@ -1,26 +1,12 @@
-class H2O {
-  constructor() {
-    console.log('create h2o');
-  }
-}
+const express = require('express');
+const port = 3000;
+const app = express();
 
-class Steam extends H2O {
-  constructor() {
-    super();
-    console.log('steam h2o');
-  }
-}
+app.get("/", function (req, res) {
+  console.log(req.params);
+  res.send("hello world");
+});
 
-class Water extends H2O {
-  constructor() {
-    console.log('water h2o');
-    super();
-  }
-}
-
-new Steam();
-new Water();
-
-module.exports = {
-  Steam, Water
-};
+app.listen(port, () => {
+  console.log("serve is listening on ", port);
+});

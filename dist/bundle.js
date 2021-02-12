@@ -342,7 +342,7 @@ eval("// Returns a wrapper function that returns a wrapped callback\n// The wrap
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const path = __webpack_require__(/*! path */ \"path\");\nconst { CleanWebpackPlugin } = __webpack_require__(/*! clean-webpack-plugin */ \"./node_modules/clean-webpack-plugin/dist/clean-webpack-plugin.js\");\n\nmodule.exports = {\n  mode: 'development',\n  target: \"node\",\n  entry: './src/main.ts',\n  output: {\n    filename: \"[name].bundle.js\",\n    path: path.resolve(__dirname, 'dist')\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.ts$/,\n        use: ['ts-loader']\n      }\n    ]\n  },\n  resolve: {\n    extensions: ['.ts', '.js', '.json']\n  },\n  plugins: [\n    new CleanWebpackPlugin()\n  ]\n}\n\n//# sourceURL=webpack://nodejs-design-pattern/./webpack.config.js?");
+eval("const path = __webpack_require__(/*! path */ \"path\");\nconst { CleanWebpackPlugin } = __webpack_require__(/*! clean-webpack-plugin */ \"./node_modules/clean-webpack-plugin/dist/clean-webpack-plugin.js\");\n\nmodule.exports = {\n  mode: 'development',\n  entry: './src/main.ts',\n  target: \"node\",\n  output: {\n    path: path.resolve(__dirname, 'dist'),\n    filename: 'bundle.js'\n  },\n  resolve: {\n    extensions: ['.ts', '.js'] //resolve all the modules other than index.ts\n  },\n  module: {\n    rules: [\n      {\n        use: 'ts-loader',\n        test: /\\.ts$/\n      }\n    ]\n  },\n  plugins: [\n    new CleanWebpackPlugin()\n  ]\n}\n\n//# sourceURL=webpack://nodejs-design-pattern/./webpack.config.js?");
 
 /***/ }),
 
