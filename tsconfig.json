@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     /* 基本配置 */
-    "target": "ES2015",
-    "module": "CommonJS",
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowJs": true,
     /* 严格配置 */
     "strict": true,
     "noImplicitAny": true,
@@ -16,10 +18,11 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true
   },
-  // "include": [
-  //   "src"
-  // ],
-  // "exclude": [
-  //   "node_modules"
-  // ]
+  "lib": [ "es2015", "dom"],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

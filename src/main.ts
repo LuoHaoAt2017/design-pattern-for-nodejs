@@ -13,14 +13,14 @@ class Steam extends H2O {
 
 class Water extends H2O {
   constructor() {
-    super();
     console.log('water h2o');
+    super();
   }
 }
 
 new Steam();
 new Water();
 
-export default {
+module.exports = {
   Steam, Water
 };

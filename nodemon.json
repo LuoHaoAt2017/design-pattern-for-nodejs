@@ -1,8 +1,7 @@
 {
   "verbose": true,
   "restartable": "rs",
-  "delay": 1000,
-  "watch": ["dist/**/*.ts"],
-  "ignore": ["test"],
-  "ext": "ts,js,json"
+  "ignore": ["node_modules"],
+  "delay": 2500,
+  "ext": "js,json"
 }
